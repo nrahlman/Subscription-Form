@@ -1,0 +1,110 @@
+.content{
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    margin-top: 20px;
+    height: 70vh;
+    border-radius: 15px
+}
+.button2{
+    width: 100%;
+}
+.inner-text{
+    margin: 50px;
+}
+.content2{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    height: 40vh;
+    border-radius: 15px;
+    
+}
+.outer-box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 14, 85);
+    height: 60vh;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 15px
+}
+.outer-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 14, 85);
+    height: 80vh;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 15px
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+}
+
+.img{
+    margin-left: 20px;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px
+}
+.left-side{
+    /* display:inline; */
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.right-side{
+    /* display: inline; */
+    height: 90%;
+}
+#myForm{
+    display: flex;
+    flex-direction: column;
+}
+.email{
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 5px
+}
+button{
+    height: 35px;
+    background-color: rgb(14, 14, 85);
+    border-radius: 5px;
+    color: white;
+}
+.checked::before {
+    content: "\2713"; /* Unicode checkmark character */
+    display: inline-block;
+    margin-right: 5px; /* Adjust spacing between checkmark and text */
+    color: white; /* Color of the checkmark (white) */
+    font-size: 10px; /* Adjust the size of the checkmark (smaller) */
+    border: 2px solid rgb(241, 113, 44); /* Border around the checkmark (orange) */
+    border-radius: 50%; /* Makes the border a circle */
+    padding: 1px; /* Adjust the size of the circle */
+    background-color: rgb(241, 113, 44); /* Color of the circle */
+}
+
+.inner-text::before {
+    content: "\2713"; /* Unicode checkmark character */
+    display: inline-block;
+    margin-right: 5px; /* Adjust spacing between checkmark and text */
+    color: white; /* Color of the checkmark (white) */
+    font-size: 30px; /* Adjust the size of the checkmark (smaller) */
+    border: 2px solid rgb(241, 113, 44); /* Border around the checkmark (orange) */
+    border-radius: 50%; /* Makes the border a circle */
+    padding: 15px; /* Adjust the size of the circle */
+    background-color: rgb(241, 113, 44); /* Color of the circle */
+}
+
+

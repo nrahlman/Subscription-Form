@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+        const urlParams= new URLSearchParams(window.location.search)
+        const email=urlParams.get("email");
+        const emailElement=document.getElementById('emailConfirmation')
+
+        if (emailElement){
+          emailElement.textContent=email
+        }
+      }) 
+      function backToForm(){
+        window.location.href="index.html"
+      }
+    </script>
+</head>
+<body>
+
+  <div class="outer-box2">
+  <div class="content2">
+    <div class="inner-text">
+    <h1 class="title2">Thanks for<br> Subscribing!</h1>
+    <p class="text">A confirmation email has been sent to<br> <span id="emailConfirmation"></span>.Please open it and click <br>the button inside to confirm your subscription.</p>
+
+  <button class="button2" onclick="backToForm()">Dismiss Message</button>
+</div>
+    </div>
+  </div>
+</body>
+</html>
