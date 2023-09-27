@@ -4,8 +4,33 @@
     background-color: white;
     align-items: center;
     margin-top: 20px;
-    height: 70vh;
-    border-radius: 15px
+    height: 80vh;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Regular */
+    
+}
+/* .checkmarked-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.title {
+    font-weight: 700;
+    font-size: 52px; /* Regular */
+}
+#middle{
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+.check-p{
+    display: flex;
+    flex-direction: row;
+}
+.checkmark{
+    margin-top: 12px;
+    margin-right: 18px;
 }
 .button2{
     width: 100%;
@@ -37,8 +62,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(14, 14, 85);
-    height: 80vh;
+    background-color: rgb(20, 23, 46);
+    height: 100vh;
     padding-left: 80px;
     padding-right: 80px;
     border-radius: 15px
@@ -52,59 +77,82 @@ body{
     height: 100vh;
     margin: 0;
 }
-
-.img{
-    margin-left: 20px;
-    width: 80%;
-    height: 100%;
-    border-radius: 10px
+.form-title{
+    font-size: 13px;
+    font-weight: 70px;
+    margin-top: 5%;
 }
+
 .left-side{
-    /* display:inline; */
-    margin-left: 10%;
+   
+    margin-left: 8%;
     margin-right: 5%;
+    margin-top: -5%;
+    width: 60vh;
 }
 .right-side{
-    /* display: inline; */
     height: 90%;
+    margin-bottom: .5vh;
+    margin-right: 2vh;
 }
 #myForm{
     display: flex;
     flex-direction: column;
 }
 .email{
-    margin-bottom: 10px;
-    height: 30px;
-    border-radius: 5px
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 10px;
+    border: .01px solid #aba7a7;
+    margin-right: 40px;
 }
 button{
-    height: 35px;
-    background-color: rgb(14, 14, 85);
-    border-radius: 5px;
+    height: 55px;
+    background-color: rgb(36, 39, 66);
+    border-radius: 10px;
     color: white;
+    margin-right: 40px;
 }
-.checked::before {
-    content: "\2713"; /* Unicode checkmark character */
+input::placeholder {
+    padding-left: 32px; /* Adjust the value to move the placeholder to the right */
+}
+/* .checked::before {
+    content: "\2713"; 
     display: inline-block;
-    margin-right: 5px; /* Adjust spacing between checkmark and text */
-    color: white; /* Color of the checkmark (white) */
-    font-size: 10px; /* Adjust the size of the checkmark (smaller) */
-    border: 2px solid rgb(241, 113, 44); /* Border around the checkmark (orange) */
-    border-radius: 50%; /* Makes the border a circle */
-    padding: 1px; /* Adjust the size of the circle */
-    background-color: rgb(241, 113, 44); /* Color of the circle */
-}
+    margin-right: 5px; 
+    color: white; 
+    font-size: 10px; 
+    border: 2px solid rgb(241, 113, 44); 
+    border-radius: 50%; 
+    padding: 1px; 
+    background-color: rgb(241, 113, 44); 
+} */
 
 .inner-text::before {
-    content: "\2713"; /* Unicode checkmark character */
+    content: "\2713"; 
     display: inline-block;
-    margin-right: 5px; /* Adjust spacing between checkmark and text */
-    color: white; /* Color of the checkmark (white) */
-    font-size: 30px; /* Adjust the size of the checkmark (smaller) */
-    border: 2px solid rgb(241, 113, 44); /* Border around the checkmark (orange) */
-    border-radius: 50%; /* Makes the border a circle */
-    padding: 15px; /* Adjust the size of the circle */
-    background-color: rgb(241, 113, 44); /* Color of the circle */
+    margin-right: 5px; 
+    color: white; 
+    font-size: 30px; 
+    border: 2px solid rgb(241, 113, 44); 
+    border-radius: 50%; 
+    padding: 15px; 
+    background-color: rgb(241, 113, 44); 
 }
+
+
+@media (max-width: 376px) {
+    .right-side svg {
+        display: none; /* Hide the SVG when the screen is small */
+      }
+    
+      /* Add your custom content here */
+      .right-side::before {
+        content: "";
+        /* Add styles for your custom content like font-size, color, etc. */
+      }
+
+}
+  
 
 
